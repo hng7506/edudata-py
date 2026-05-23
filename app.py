@@ -8,7 +8,7 @@ import ve_bieu_do as chart   # Ông họa sĩ vẽ hình
 import os
 # from dotenv import load_dotenv
 import google.generativeai as genai
-
+API_KEY =st.secrets["Gemini_API_KEY"]
 genai.configure(api_key=API_KEY)
 model_ai = genai.GenerativeModel('gemini-2.5-flash')
 
